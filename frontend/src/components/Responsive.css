@@ -1,0 +1,97 @@
+/* ========== MOBILE VIEW (Small screens < 768px) ========== */
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .home-container h1 {
+    font-size: 28px;
+  }
+
+  .home-container p {
+    font-size: 16px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .test-container, .start-test-container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .options-container {
+    flex-direction: column;
+  }
+
+  .user-logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+
+  .register-container, .login-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .start-test-btn, .nav-btn, .home-btn {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .user-dropdown {
+    right: 0;
+    width: 100%;
+    box-shadow: none;
+  }
+}
+
+/* ========== TABLET VIEW (768px to 1024px) ========== */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  nav {
+    padding: 10px;
+  }
+
+  .home-container h1 {
+    font-size: 36px;
+  }
+
+  .test-container, .start-test-container {
+    width: 80%;
+  }
+
+  .modal-content {
+    width: 80%;
+  }
+}
+
+/* ========== DESKTOP VIEW (>1024px) ========== */
+@media (min-width: 1025px) {
+  nav ul {
+    display: flex;
+  }
+
+  .modal-content {
+    width: 600px;
+  }
+}
