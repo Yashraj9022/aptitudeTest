@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f0f4f7;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    padding: 10px 20px;
+}
+
+nav .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.auth-buttons button {
+    margin-left: 10px;
+    padding: 8px 15px;
+    border: none;
+    background-color: white;
+    color: #007bff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.auth-buttons button:hover {
+    background-color: #e6e6e6;
+}
+
+header {
+    background-image: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-text {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.content {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.content h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+
+
+.close-btn2 {
+  /* left: 10rem;   */
+  margin-left: 90%;
+  top: 3rem;
+
+  font-size: 3rem;
+  cursor: pointer;
+  /* background-color: red; */
+  /* padding: 2px 4px; */
+  color: #ff0202;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.register-section {
+    margin-top: 30px;
+}
+
+.big-register-btn {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation: pulse 1.5s infinite;
+}
+.home-container {
+  height: 100vh;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.home-container h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.home-container p {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.home-btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home-btn.login {
+  background-color: #ff7f50;
+  color: white;
+}
+
+.home-btn.register {
+  background-color: #28a745;
+  color: white;
+}
+
+.home-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content1{
+  background-color: #ffffff00;
+  width: 35vw;
+  height: 96vh;
+}
+
+
+
+.close-btn1 {
+  position: absolute;
+  top: 4.9rem;
+  right: 29.6rem;
+  font-size: 24px;
+  cursor: pointer;
+  color: #555;
+}
