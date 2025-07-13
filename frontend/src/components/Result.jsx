@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './Result.css';
-import './responsive.css'
+import './Responsive.css'
 
 const Result = ({ token, userAnswers }) => {
   const [questions, setQuestions] = useState([]);

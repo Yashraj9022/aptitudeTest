@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-// import './responsive.css'
+import './Responsive.css'
 
 const QuestionList = ({ token }) => {
   const [questions, setQuestions] = useState([]);

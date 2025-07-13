@@ -2,7 +2,7 @@ import {useState} from 'react';
 import './Home.css';
 import Login from './Login';
 import Register from './Register';
-import './responsive.css'
+import './Responsive.css'
 const Home = () => {
   const [showLogin, setShowLogin] = useState(false);
   const [showRegister, setShowRegister] = useState(false);

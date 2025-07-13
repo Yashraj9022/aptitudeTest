@@ -3,7 +3,7 @@ import axios from 'axios';
 import './Test.css';
 import Navbar from './Navbar';
 // import { useNavigate } from 'react-router-dom';
-import './responsive.css'
+import './Responsive.css'
 
 const Test = ({ token, handleLogout }) => {
   const [questions, setQuestions] = useState([]);

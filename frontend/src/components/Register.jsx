@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Register.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import './responsive.css'
+import './Responsive.css'
 import Popup from "./Popup";
 const Register = () => {
   const [formData, setFormData] = useState({

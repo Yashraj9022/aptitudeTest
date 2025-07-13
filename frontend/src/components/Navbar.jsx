@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import './Navbar.css';
 import axios from 'axios';
 import { FaPencilAlt } from 'react-icons/fa';  // Pencil icon
-import './responsive.css'
+import './Responsive.css'
 
 const Navbar = ({ handleLogout }) => {
   const [showProfileModal, setShowProfileModal] = useState(false);

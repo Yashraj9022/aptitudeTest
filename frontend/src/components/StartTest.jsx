@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./StartTest.css";
 import Usericon from "../assets/login.png";
 import axios from "axios";
-import './responsive.css'
+import './Responsive.css'
 
 const StartTest = ({ token, user, email, handleLogout }) => {
   const navigate = useNavigate();
