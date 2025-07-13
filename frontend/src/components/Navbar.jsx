@@ -11,14 +11,14 @@ const Navbar = ({ handleLogout }) => {
   const [profile, setProfile] = useState({ username: '', email: '', profile_image: '' });
 
   const fileInputRef = useRef(null);
-  const backendBaseURL = "http://localhost:8000";
+  const backendBaseURL = "https://aptitudetest-1.onrender.com";
 
   // Fetch user profile
   useEffect(() => {
     const fetchProfile = async () => {
       try {
         const token = localStorage.getItem('token');
-        const res = await axios.get('http://localhost:8000/api/profile/', {
+        const res = await axios.get('https://aptitudetest-1.onrender.com//api/profile/', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setProfile(res.data);

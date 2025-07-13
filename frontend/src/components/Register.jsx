@@ -105,7 +105,7 @@ const [popup, setPopup] = useState({ show: false, message: "", type: "" });
     formDataToSend.append("profile_image", profileImage);
 
     try {
-      await axios.post("http://localhost:8000/api/register/", formDataToSend, {
+      await axios.post("https://aptitudetest-1.onrender.com/api/register/", formDataToSend, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       setPopup({

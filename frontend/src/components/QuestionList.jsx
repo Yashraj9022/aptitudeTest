@@ -8,7 +8,7 @@ const QuestionList = ({ token }) => {
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
-        const res = await axios.get('http://localhost:8000/api/aptitude-questions/', {
+        const res = await axios.get('https://aptitudetest-1.onrender.com/api/aptitude-questions/', {
           headers: {
             Authorization: `Bearer ${token}`
           }

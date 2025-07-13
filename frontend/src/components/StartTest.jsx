@@ -19,7 +19,7 @@ useEffect(() => {
   const fetchProfile = async () => {
     try {
       const token = localStorage.getItem('token');
-      const res = await axios.get('http://localhost:8000/api/profile/', {
+      const res = await axios.get('https://aptitudetest-1.onrender.com/api/profile/', {
         
         headers: {
           Authorization: `Bearer ${token}`,

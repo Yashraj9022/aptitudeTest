@@ -17,14 +17,14 @@ const Test = ({ token, handleLogout }) => {
   const [showModal, setShowModal] = useState(false);    // <-- Modal visibility
 
   // const navigate = useNavigate();
-  const backendBaseURL = "http://localhost:8000";
+  const backendBaseURL = "https://aptitudetest-1.onrender.com/";
 
   // Fetch profile
   useEffect(() => {
     const fetchProfile = async () => {
       try {
         const token = localStorage.getItem('token');
-        const res = await axios.get('http://localhost:8000/api/profile/', {
+        const res = await axios.get('https://aptitudetest-1.onrender.com/api/profile/', {
           headers: { Authorization: `Bearer ${token}` },
         });
         setProfile(res.data);
@@ -37,7 +37,7 @@ const Test = ({ token, handleLogout }) => {
 
   // Fetch questions
   useEffect(() => {
-    axios.get('http://localhost:8000/api/aptitude-questions/', {
+    axios.get('https://aptitudetest-1.onrender.com//api/aptitude-questions/', {
       headers: { Authorization: `Bearer ${token}` },
     }).then(res => {
       setQuestions(res.data.questions);

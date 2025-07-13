@@ -11,7 +11,7 @@ const Result = ({ token, userAnswers }) => {
     const fetchQuestions = async () => {
       try {
         const res = await axios.post(
-          'http://localhost:8000/api/submit-answers/',
+          'https://aptitudetest-1.onrender.com/api/submit-answers/',
           { answers: userAnswers },                     // ✅ POST body
           {
             headers: {

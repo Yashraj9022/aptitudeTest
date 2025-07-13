@@ -88,7 +88,7 @@ const [popup, setPopup] = useState({ show: false, message: "", type: "" });
     }
 
     try {
-      const res = await axios.post("http://localhost:8000/api/login/", {
+      const res = await axios.post("https://aptitudetest-1.onrender.com/api/login/", {
         username,
         password,
       });
